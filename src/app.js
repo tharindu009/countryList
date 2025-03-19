@@ -24,7 +24,6 @@ async function populateCountry(limit) {
   try {
     const countries = await countryService.getCountryByRegion("europe");
     
-
     //console.log(limit);
     const countryNames = countries.map((country) => country.name.common);
 
