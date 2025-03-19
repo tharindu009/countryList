@@ -11,11 +11,12 @@
 <body>
     <form id="country list">
         <h1>List of Countries</h1>
-        <img class="img-fluid" style="height: 250px; width: 600px;" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg" alt="">
+        <img class="img-fluid" style="height: 250px; width: 600px;"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg" alt="">
         <p id="userName"></p>
-        <div id="countries" class="container">
-            <div id="countryContainer" class="row">
-
+        <div class="container">
+            <div data-content="countries" id="countryContainer" class="row">
+                <!-- country list HTML -->
                 <!-- <ul data-content="countries"></ul> -->
             </div>
         </div>
@@ -25,13 +26,12 @@
                     <input type="text" id="firstName" placeholder="First Name" class="form-control mb-2" />
                     <input type="text" id="lastName" placeholder="Last Name" class="form-control mb-2" />
                     <div id="displayName" class="mb-2"></div>
-                  </div>
+                </div>
                 <div class="mb-3">
                     <p>Choose how many cards to Display!</p>
                     <div>
                         <input class="form-check-input" type="radio" name="recordCount" id="recordCount5" value="5"
                             checked />
-
 
                         <label class="form-check-label" for="recordCount5">5 Records</label>
                     </div>
@@ -50,7 +50,7 @@
                 <button id="showRecordsButton" class="btn btn-primary ms-2" type="submit">Show Records</button>
             </div>
         </div>
-        <hr/>
+        <hr />
         <footer>
             <h3>Footer</h3>
         </footer>
