@@ -9,11 +9,51 @@
 </head>
 
 <body>
-    <h1 class="text-body-secondary">List of Countries in the World</h1>
-    <form>
-        <input type="text" id="regionInput" placeholder="Enter region" />
-        <button class="btn btn-primary" id="Search">Search</button>
-        <ul data-content="countries"></ul>
+    <form id="country list">
+        <h1>List of Countries</h1>
+        <img class="img-fluid" style="height: 250px; width: 600px;" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg" alt="">
+        <p id="userName"></p>
+        <div id="countries" class="container">
+            <div id="countryContainer" class="row">
+
+                <!-- <ul data-content="countries"></ul> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <input type="text" id="firstName" placeholder="First Name" class="form-control mb-2" />
+                    <input type="text" id="lastName" placeholder="Last Name" class="form-control mb-2" />
+                    <div id="displayName" class="mb-2"></div>
+                  </div>
+                <div class="mb-3">
+                    <p>Choose how many cards to Display!</p>
+                    <div>
+                        <input class="form-check-input" type="radio" name="recordCount" id="recordCount5" value="5"
+                            checked />
+
+
+                        <label class="form-check-label" for="recordCount5">5 Records</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="radio" name="recordCount" id="recordCount10" value="10" />
+                        <label class="form-check-label" for="recordCount10">10 Records</label>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="radio" name="recordCount" id="recordCount20" value="20" />
+                        <label class="form-check-label" for="recordCount20">20 Records</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" id="firstName" placeholder="Show item of Type" class="form-control mb-2" />
+                </div>
+                <button id="showRecordsButton" class="btn btn-primary ms-2" type="submit">Show Records</button>
+            </div>
+        </div>
+        <hr/>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
     </form>
     <script type="module" src="./src/app.js"></script>
 </body>

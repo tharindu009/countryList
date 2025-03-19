@@ -1,0 +1,13 @@
+.country-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block; /* Display boxes in a row */
+    min-width: 150px; /* Set a minimum width for the boxes */
+    text-align: center; /* Center the text inside the boxes */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  #countryContainer{
+      text-align: center;
+  }
